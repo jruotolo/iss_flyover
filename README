@@ -1,0 +1,11 @@
+This started as a project for a Python udemy course to send an email when the ISS was overhead at night
+
+After completing the project, I realized the email was being sent too close to the time of the flyover,
+so you do not have time to actually see the station fly over.
+
+Going back to the api documentation I found out that I could request future estimated flyovers by changing
+the request to the Lat/Lng of the user location vs asking for the current location of the station.
+
+The API returns the risetime(utc) and duration(seconds) any time the ISS is estimated to be within
+ +- 10 degrees of input lat/lng
+
